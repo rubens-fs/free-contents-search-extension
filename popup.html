@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Images Search Extension</title>
+
+    <link rel="stylesheet" href="./css/popup.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Free Images Search</h1>
+    </div>
+    <!-- If you want to add more options, just put them below. Remember to add them in the popup.js file and the total size in CSS so as not to break the interface. -->
+    <div class="options">
+        <input type="checkbox" id="unsplash-search" class="search-option">
+        <label for="unsplash-search">Unsplash</label><br>
+        <input type="checkbox" id="pexels-search" class="search-option">
+        <label for="pexels-search">Pexels</label><br>
+        <input type="checkbox" id="pixabay-search" class="search-option">
+        <label for="pixabay-search">Pixabay</label><br>
+        <input type="checkbox" id="stocksnap-search" class="search-option">
+        <label for="stocksnap-search">StockSnap</label><br>
+        <input type="checkbox" id="freeimages-search" class="search-option">
+        <label for="freeimages-search">FreeImages</label><br>
+        <input type="checkbox" id="negativespace-search" class="search-option">
+        <label for="negativespace-search">Negative Space</label><br>
+      </div>
+      <div class="container">
+          <input type="text" id="search-bar" placeholder="Search here">
+          <button id="btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </div>
+
+      <script src="./js/popup.js"></script>
+</body>
+</html>

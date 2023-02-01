@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Free Images Search",
+    "description": "An extension that makes it possible, with just a few clicks, to search for images on the biggest free sites today!",
+    "version": "1.0",
+  
+    "author": "https://github.com/rubens-fs",
+  
+    "action": {
+        "default_title":"Free Images Search",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "./imgs/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./js/popup.js"]
+        }
+    ],
+    "permissions": [
+      "activeTab",
+      "tabs"
+    ]
+  }
+  
