@@ -28,33 +28,40 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!searchInput.value) {
       return alert('Please make sure you have an option selected and/or a search term.');
     }
-    if (selectedOption === 'unsplash') {
-      window.open(
-        'https://unsplash.com/s/photos/' + searchInput.value, '_blank'
-      )
-    } else if (selectedOption === 'pexels') {
-      window.open(
-        'https://www.pexels.com/search/' + searchInput.value, '_blank'
-      )
-    } else if (selectedOption === 'pixabay') {
-      window.open(
-        'https://pixabay.com/images/search/' + searchInput.value, '_blank'
-      )
-    } else if (selectedOption === 'stocksnap') {
-      window.open(
-        'https://stocksnap.io/search/' + searchInput.value, '_blank'
-      )
-    } else if (selectedOption === 'freeimages') {
-      window.open(
-        'https://www.freeimages.com/search/' + searchInput.value, '_blank'
-      )
-    } else if (selectedOption === 'negativespace') {
-      window.open(
-        'https://negativespace.co/?s=' + searchInput.value, '_blank'
-      )
-    } else {
-      return alert('Please select a search option!');
-    }
+    switch (selectedOption) {
+      case 'unsplash':
+          window.open (
+              'https://unsplash.com/s/photos/' + searchInput.value, '_blank'
+          );
+          break;
+      case 'pexels':
+          window.open (
+              'https://www.pexels.com/search/' + searchInput.value, '_blank'
+          );
+          break;
+      case 'pixabay':
+          window.open (
+              'https://pixabay.com/images/search/' + searchInput.value, '_blank'
+          );
+          break;
+      case 'stocksnap':
+          window.open (
+              'https://stocksnap.io/search/' + searchInput.value, '_blank'
+          );
+          break;
+      case 'freeimages':
+          window.open (
+              'https://www.freeimages.com/search/' + searchInput.value, '_blank'
+          );
+          break;
+      case 'negativespace':
+          window.open (
+              'https://negativespace.co/?s=' + searchInput.value, '_blank'
+          );
+          break;
+      default:
+          alert('Please select a search option!');
+      }
   }
 
   // Active the function when ENTER is pressed
