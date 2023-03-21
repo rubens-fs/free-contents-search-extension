@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Images Search Extension</title>
+    <title>Free Contents Search Extension</title>
 
     <link rel="stylesheet" href="./css/popup.css">
 
@@ -17,11 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="title">
-        <h1>Free Images Search</h1>
-    </div>
+    <h1 id="title">Free Images Search</h1>
     <!-- If you want to add more options, just put them below. Remember to add them in the popup.js file and the total size in CSS so as not to break the interface. -->
-    <div class="options">
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <p id="text">Click to switch!</p>
+    <div class="options-photos">
         <input type="checkbox" id="unsplash-search" class="search-option">
         <label for="unsplash-search">Unsplash</label><br>
         <input type="checkbox" id="pexels-search" class="search-option">
@@ -34,12 +37,26 @@
         <label for="freeimages-search">FreeImages</label><br>
         <input type="checkbox" id="negativespace-search" class="search-option">
         <label for="negativespace-search">Negative Space</label><br>
-      </div>
-      <div class="container">
-          <input type="text" id="search-bar" placeholder="Search here">
-          <button id="btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-      </div>
+    </div>
+    <div class="options-videos">
+        <input type="checkbox" id="videvo-search" class="search-option">
+        <label for="videvo-search">Videvo</label><br>
+        <input type="checkbox" id="pexelsVideos-search" class="search-option">
+        <label for="pexelsVideos-search">Pexels</label><br>
+        <input type="checkbox" id="pixabayVideos-search" class="search-option">
+        <label for="pixabayVideos-search">Pixabay</label><br>
+        <input type="checkbox" id="mazwai-search" class="search-option">
+        <label for="mazwai-search">Mazwai</label><br>
+        <input type="checkbox" id="coverr-search" class="search-option">
+        <label for="coverr-search">Coverr</label><br>
+        <input type="checkbox" id="videezy-search" class="search-option">
+        <label for="videezy-search">Videezy</label><br>
+    </div>
+    <div class="container">
+        <input type="text" id="search-bar" placeholder="Search here">
+        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    </div>
 
-      <script src="./js/popup.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 </html>
