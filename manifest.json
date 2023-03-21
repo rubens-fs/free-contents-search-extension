@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Free Images Search",
-    "description": "An extension that makes it possible, with just a few clicks, to search for images on the biggest free sites today!",
-    "version": "1.0",
+    "name": "Free Contents Search",
+    "description": "An extension that makes it possible, with just a few clicks, to search for images or videos on the biggest free sites today!",
+    "version": "2.0",
   
     "author": "https://github.com/rubens-fs",
   
     "action": {
-        "default_title":"Free Images Search",
+        "default_title":"Free Contents Search",
         "default_popup": "popup.html"
     },
     "icons": {
